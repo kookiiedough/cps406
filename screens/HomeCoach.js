@@ -22,9 +22,12 @@ const HomeCoach = ({navigation, route}) => {
 
       {/* for actual page content */}
       <View style={styles.logoContainer}>
-  
-        <Text style={styles.heading}>Upcoming Events</Text>
-        <Text style={styles.otherTxt}>No scheduled events at the moment, you will be notified when you are chosen to coach...</Text>
+          <TouchableOpacity
+            // onPress={() => [navigation.navigate('CoachSchedulePage', {user:user})]}>
+            onPress={() => [navigation.navigate('HomeCoach', {user:user})]}>
+            <Text style={styles.heading}>Upcoming Events</Text>
+          </TouchableOpacity>
+          <Text style={styles.otherTxt}>No scheduled events at the moment, you will be notified when you are chosen to coach...</Text>
 
       </View>
 
