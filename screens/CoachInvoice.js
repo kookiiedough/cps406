@@ -11,16 +11,16 @@ const CoachInvoice = ({navigation, route}) => {
   return (
     <View style={styles.containerOld}>
 
+      <View style={styles.header}>
+        <Text style={styles.heading}>{user.slice(2)}</Text>
+      </View>
+      
       {/* for mail icon */}
       <View style={styles.emailContainer}>
         <TouchableOpacity
           onPress={() => [navigation.navigate('CoachMail', {user:user})]}>
           <Image source={require('../assets/email.png')} style={styles.topRightImage} />
         </TouchableOpacity>
-      </View>
-
-      <View style={styles.header}>
-        <Text style={styles.heading}>{user.slice(2)}</Text>
       </View>
 
       {/* //ACTUAL CONTENT */}
