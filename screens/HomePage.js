@@ -1,11 +1,11 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, TouchableHighlight, Image, TouchableOpacity } from 'react-native';
-import { useNavigation } from "@react-navigation/native";
+// import { useNavigation } from "@react-navigation/native";
 
 
-const HomePage = () => {
-  const navigation = useNavigation();
+const HomePage = ({navigation}) => {
+  // const navigation = useNavigation();
 
   return (
     <View style={styles.container}>

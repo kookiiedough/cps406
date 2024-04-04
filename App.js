@@ -2,6 +2,19 @@ import * as React from 'react';
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+// Aamna
+import LoadingPage from "./screens/LoadingPage";
+import MemberCreateAccount from "./screens/MemberCreateAccount";
+import MemberSignIn from "./screens/MemberSignIn";
+import TryAgainCreatingAcc from "./screens/TryAgainCreatingAcc";
+import CoachSignIn from './screens/CoachSignIn';
+import HomeCoach from './screens/HomeCoach';
+import CoachMail from './screens/CoachMail';
+import CoachUser from './screens/CoachUser';
+import CoachInvoice from './screens/CoachInvoice';
+
+//reyhan
 import HomePageScreen from './screens/HomePage';
 import LevelSelectScreen from './screens/LevelSelect';
 import FinancialInfoScreen from './screens/FinancialInfo';
@@ -13,6 +26,8 @@ import PaymentFailureScreen from './screens/PaymentFailure';
 import MailPageScreen from './screens/MailPage';
 import PersonalDetailsScreen from './screens/PersonalDetails';
 
+
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -20,7 +35,7 @@ export default function App() {
 
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Home"
+        initialRouteName="LoadingPage"
         screenOptions={{
           headerBackTitle: "back",
           headerShown: true,
@@ -33,6 +48,18 @@ export default function App() {
             fontWeight: "bold",
           },
         }}>
+
+        <Stack.Screen component={LoadingPage} name="LoadingPage" options={{ title: "Loading Page", headerShown: false}} />
+        <Stack.Screen component={MemberCreateAccount} name="MemberCreateAccount" options={{ title: "Member Create Account", headerShown: false }} />
+        <Stack.Screen component={MemberSignIn} name="MemberSignIn" options={{ title: "Member Sign In", headerShown: false }} />
+        <Stack.Screen component={CoachSignIn} name="CoachSignIn" options={{title: "Coach Sign In"}} />
+        <Stack.Screen component={TryAgainCreatingAcc} name="TryAgainCreatingAcc" options={{ title: "Try Again Creating Account"}} />
+        <Stack.Screen component={HomeCoach} name="HomeCoach" options={{title: "Home Coach"}} />
+        <Stack.Screen component={CoachMail} name="CoachMail" options={{title: "Coach Mail"}} />
+        <Stack.Screen component={CoachUser} name="CoachUser" options={{title: "Coach User"}} />
+        <Stack.Screen component={CoachInvoice} name="CoachInvoice" options={{title: "Coach Invoice"}} />
+
+
 
         <Stack.Screen component={HomePageScreen} name="Home" options={{ title: "Home" }} />
         <Stack.Screen component={LevelSelectScreen} name="Browse" options={{ title: "Home" }} />
