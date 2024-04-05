@@ -4,32 +4,41 @@ import { StyleSheet, Text, View, Button, TouchableHighlight, Image, TouchableOpa
 // import { useNavigation } from "@react-navigation/native";
 
 
-const HomeCoach = ({navigation, route}) => {
+const CoachSchedulePage = ({navigation, route}) => {
   // const navigation = useNavigation();
-  const {user} = route.params
+  const {user} = route.params;
 
   return (
-    <View style={styles.container}>
+    <View style={styles.containerOld}>
 
       {/* for mail icon */}
       <View style={styles.emailContainer}>
         <TouchableOpacity
           onPress={() => [navigation.navigate('CoachMail', {user:user})]}>
+          {/* <Image source={require('../assets/email.png')} style={styles.topRightImage} /> */}
           <Image source={require('../assets/email.png')} style={styles.topRightImage} />
-          {/* <Image source={require('../Components/email.png')} style={styles.topRightImage} /> */}
         </TouchableOpacity>
       </View>
 
-      {/* for actual page content */}
+      {/* upcoming events header */}
       <View style={styles.logoContainer}>
-          <TouchableOpacity
-            // onPress={() => [navigation.navigate('CoachSchedulePage', {user:user})]}>
-            onPress={() => [navigation.navigate('CoachSchedulePage', {user:user})]}>
-            <Text style={styles.heading}>Upcoming Events</Text>
-          </TouchableOpacity>
-          <Text style={styles.otherTxt}>No scheduled events at the moment, you will be notified when you are chosen to coach...</Text>
-
+        <Text style={styles.heading}>Upcoming Events</Text>
       </View>
+
+      {/* rectangles and event info */}
+      <Image
+        source={{ uri: "https://i.gyazo.com/719950713d490bf70035db689e1e2dab.png" }}
+        style={styles.logo}/>
+      {/* edit event button */}
+      <View style={styles.containerBtn}>
+
+        <TouchableOpacity
+            onPress= {() => navigation.navigate("CoachEditSchedulePage", {user:user})}
+            style= {styles.btn}>
+            <Text style= {styles.textBtn} >Edit Session</Text>
+        </TouchableOpacity>
+
+        </View>
 
       {/* Footer with icons */}
       <View style={styles.footer}>
@@ -37,6 +46,7 @@ const HomeCoach = ({navigation, route}) => {
         {/* coach invoice page */}
         <TouchableOpacity
           onPress={() => [navigation.navigate('CoachInvoice', {user:user})]}>
+          {/* <Image source={require("../assets/coachInvoice.png")} style={styles.footerIcon} /> */}
           <Image source={require("../assets/coachInvoice.png")} style={styles.invIcon} />
 
         </TouchableOpacity>
@@ -45,6 +55,7 @@ const HomeCoach = ({navigation, route}) => {
         {/* coach home / scheule page */}
         <TouchableOpacity
           onPress={() => [navigation.navigate('HomeCoach', {user:user})]}>
+          {/* <Image source={require("../assets/calendar.png")} style={styles.footerIcon} /> */}
           <Image source={require("../assets/calendar.png")} style={styles.calenIcon} />
 
         </TouchableOpacity>
@@ -52,6 +63,7 @@ const HomeCoach = ({navigation, route}) => {
         {/* Icon 3 */}
         <TouchableOpacity
           onPress={() => [navigation.navigate('CoachUser', {user:user})]}>
+          {/* <Image source={require("../assets/user.png")} style={styles.footerIcon} /> */}
           <Image source={require("../assets/user.png")} style={styles.userIcon} />
 
         </TouchableOpacity>
@@ -62,34 +74,13 @@ const HomeCoach = ({navigation, route}) => {
   }
 
 const styles = StyleSheet.create({
-  container: {
+  containerOld: {
     flex: 1,
     backgroundColor: '#E8F8D8',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
-  emailContainer: {
-    position: 'absolute',
-    top: 20,
-    right: 20,
-  },
-  topRightImage: {
-      width: 60,
-      height: 60,
-  },
-  logoContainer: {
-    flex: 0,
-    justifyContent: 'center', //useful
-    bottom: 90,
-    alignItems: 'center',
-  },
-  logo: {
-    width: 100, 
-    height: 100, 
-    marginBottom: 10,
-  },
+
   heading: {
-    fontSize: 25,
+    fontSize:18,
     fontWeight: 'bold',
     height: 50,
     borderColor: 'gray',
@@ -100,16 +91,32 @@ const styles = StyleSheet.create({
     textAlignVertical: 'center',
     textAlign: 'center',
     lineHeight:50,
+    top:18,
+    left: 20,
   },
-  otherTxt: {
-    fontSize: 20,
-    color: '#767676',
-    fontWeight:'bold',
-    paddingLeft: 45,
-    paddingRight: 45,   
-    top: 40, 
+  Container: {
+    flex: 1,
+    backgroundColor: '#E8F8D8',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  
+  textBtn: {
+    fontSize: 16,
     textAlign: 'center',
+    paddingVertical: 10,
   },
+  
+  emailContainer: {
+    position: 'absolute',
+    top: 20,
+    right: 20,
+  },
+  topRightImage: {
+      width: 40,
+      height: 40,
+  },
+
   buttonContainer: {
     bottom: 45,
     flexDirection: 'column',
@@ -157,6 +164,48 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
   },
+  
+  header: {
+    backgroundColor: '#CCE5B3',
+    paddingVertical: 25,
+    paddingHorizontal: 20,
+    alignItems: 'center',
+    borderColor: 'black',
+  },
+  btn: {
+    left:115,
+    top:25,
+    borderRadius: 50,
+    paddingVertical: 1,
+    // paddingHorizontal: 8,
+    // marginBottom: 10,
+    marginTop: 1,
+    minWidth:130,
+    margin: 50,
+    alignItems: 'center',
+    alignSelf: "center",
+    backgroundColor: "#CAE19D",
+    borderColor: 'gray',
+    borderWidth: 1,
+    width: "20%",
+  },
+  
+  containerBtn: {
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+
+  logo: {
+    width: "107%",
+    height: 220,
+    // marginBottom: 1, 
+    // position: 'absolute',
+    left:3,
+    top: 60,
+    
+  },
 });
 
-export default HomeCoach;
+export default CoachSchedulePage;

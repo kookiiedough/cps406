@@ -4,32 +4,42 @@ import { StyleSheet, Text, View, Button, TouchableHighlight, Image, TouchableOpa
 // import { useNavigation } from "@react-navigation/native";
 
 
-const HomeCoach = ({navigation, route}) => {
+const ParticipantsList = ({navigation, route}) => {
   // const navigation = useNavigation();
-  const {user} = route.params
+  const {user} = route.params;
 
   return (
-    <View style={styles.container}>
+    <View style={styles.containerOld}>
 
       {/* for mail icon */}
       <View style={styles.emailContainer}>
         <TouchableOpacity
           onPress={() => [navigation.navigate('CoachMail', {user:user})]}>
+          {/* <Image source={require('../assets/email.png')} style={styles.topRightImage} /> */}
           <Image source={require('../assets/email.png')} style={styles.topRightImage} />
-          {/* <Image source={require('../Components/email.png')} style={styles.topRightImage} /> */}
         </TouchableOpacity>
       </View>
 
-      {/* for actual page content */}
+        {/* upcoming events header */}
       <View style={styles.logoContainer}>
-          <TouchableOpacity
-            // onPress={() => [navigation.navigate('CoachSchedulePage', {user:user})]}>
-            onPress={() => [navigation.navigate('CoachSchedulePage', {user:user})]}>
-            <Text style={styles.heading}>Upcoming Events</Text>
-          </TouchableOpacity>
-          <Text style={styles.otherTxt}>No scheduled events at the moment, you will be notified when you are chosen to coach...</Text>
+        <Text style={[styles.heading, {top:20, left:30}]}>Basic Strokes</Text>
+      </View>
+
+      {/* image */}
+      <View style={styles.logoContainer}>
+        {/* <Image source={require('../assets/profileTennis.png')} style={styles.logo} /> */}
+        <Image
+        source={{ uri: "https://i.gyazo.com/e0747bcdaa3a7b64820ed373df04e1db.png" }}
+        style={styles.logo}/>
+
+        <Text style={[{top:50, fontSize:18, left:130}]}>Participants:</Text>
+        <Image
+        source={{ uri: "https://i.gyazo.com/b9fb4555886ac514eda8c32fac105306.png" }}
+        style={styles.logoParticipants}/>
+
 
       </View>
+
 
       {/* Footer with icons */}
       <View style={styles.footer}>
@@ -37,6 +47,7 @@ const HomeCoach = ({navigation, route}) => {
         {/* coach invoice page */}
         <TouchableOpacity
           onPress={() => [navigation.navigate('CoachInvoice', {user:user})]}>
+          {/* <Image source={require("../assets/coachInvoice.png")} style={styles.footerIcon} /> */}
           <Image source={require("../assets/coachInvoice.png")} style={styles.invIcon} />
 
         </TouchableOpacity>
@@ -45,6 +56,7 @@ const HomeCoach = ({navigation, route}) => {
         {/* coach home / scheule page */}
         <TouchableOpacity
           onPress={() => [navigation.navigate('HomeCoach', {user:user})]}>
+          {/* <Image source={require("../assets/calendar.png")} style={styles.footerIcon} /> */}
           <Image source={require("../assets/calendar.png")} style={styles.calenIcon} />
 
         </TouchableOpacity>
@@ -52,6 +64,7 @@ const HomeCoach = ({navigation, route}) => {
         {/* Icon 3 */}
         <TouchableOpacity
           onPress={() => [navigation.navigate('CoachUser', {user:user})]}>
+          {/* <Image source={require("../assets/user.png")} style={styles.footerIcon} /> */}
           <Image source={require("../assets/user.png")} style={styles.userIcon} />
 
         </TouchableOpacity>
@@ -62,6 +75,11 @@ const HomeCoach = ({navigation, route}) => {
   }
 
 const styles = StyleSheet.create({
+  containerOld: {
+    flex: 1,
+    backgroundColor: '#E8F8D8',
+  },
+
   container: {
     flex: 1,
     backgroundColor: '#E8F8D8',
@@ -74,64 +92,10 @@ const styles = StyleSheet.create({
     right: 20,
   },
   topRightImage: {
-      width: 60,
-      height: 60,
+      width: 40,
+      height: 40,
   },
-  logoContainer: {
-    flex: 0,
-    justifyContent: 'center', //useful
-    bottom: 90,
-    alignItems: 'center',
-  },
-  logo: {
-    width: 100, 
-    height: 100, 
-    marginBottom: 10,
-  },
-  heading: {
-    fontSize: 25,
-    fontWeight: 'bold',
-    height: 50,
-    borderColor: 'gray',
-    borderWidth: 1,
-    paddingHorizontal: 20,
-    borderRadius: 20,  
-    width: 270,
-    textAlignVertical: 'center',
-    textAlign: 'center',
-    lineHeight:50,
-  },
-  otherTxt: {
-    fontSize: 20,
-    color: '#767676',
-    fontWeight:'bold',
-    paddingLeft: 45,
-    paddingRight: 45,   
-    top: 40, 
-    textAlign: 'center',
-  },
-  buttonContainer: {
-    bottom: 45,
-    flexDirection: 'column',
-    justifyContent: 'flex-start',
-    width: '80%',
-  },
-  button: {
-    bottom: 70,
-    borderRadius: 25,
-    paddingVertical: 5,
-    paddingHorizontal: 20,
-    marginHorizontal: 1,
-    marginBottom: 10,
-    minWidth: 100,
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 18,
-    textAlign: 'center',
-    paddingVertical: 10,
-  },
+
   footer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -157,6 +121,50 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
   },
+  heading: {
+    fontSize:18,
+    fontWeight: 'bold',
+    height: 50,
+    borderColor: 'gray',
+    borderWidth: 1,
+    paddingHorizontal: 20,
+    borderRadius: 20,  
+    width: 270,
+    textAlignVertical: 'center',
+    textAlign: 'center',
+    lineHeight:50,
+    top:18,
+    left: 20,
+  },
+
+  textBtn: {
+    fontSize: 16,
+    textAlign: 'center',
+    paddingVertical: 10,
+  },
+  
+  containerBtn: {
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+
+  logo: {
+    width: 110, 
+    height: 110,
+    marginBottom: 5,
+    top:35,
+    left: 130,
+  },
+
+  logoParticipants:{
+    width: 280, 
+    height: 380,
+    marginBottom: 5,
+    top:55,
+    left: 50,
+  }
 });
 
-export default HomeCoach;
+export default ParticipantsList;

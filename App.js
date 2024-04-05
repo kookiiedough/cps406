@@ -13,6 +13,9 @@ import HomeCoach from './screens/HomeCoach';
 import CoachMail from './screens/CoachMail';
 import CoachUser from './screens/CoachUser';
 import CoachInvoice from './screens/CoachInvoice';
+import CoachSchedulePage from './screens/CoachSchedulePage';
+import CoachEditSchedulePage from './screens/CoachEditSchedulePage';
+import ParticipantsList from './screens/ParticipantsList';
 
 //reyhan
 import HomePageScreen from './screens/HomePage';
@@ -58,6 +61,9 @@ export default function App() {
         <Stack.Screen component={CoachMail} name="CoachMail" options={{title: "Coach Mail"}} />
         <Stack.Screen component={CoachUser} name="CoachUser" options={{title: "Coach User"}} />
         <Stack.Screen component={CoachInvoice} name="CoachInvoice" options={{title: "Coach Invoice"}} />
+        <Stack.Screen component={CoachSchedulePage} name="CoachSchedulePage" options={{title: "Coach Schedule Page"}} />
+        <Stack.Screen component={CoachEditSchedulePage} name="CoachEditSchedulePage" options={{title: "Coach Edit Schedule Page"}} />
+        <Stack.Screen component={ParticipantsList} name="ParticipantsList" options={{title: "Participants List"}} />
 
 
 
