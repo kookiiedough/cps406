@@ -34,7 +34,7 @@ const DropdownMonth = () => {
 					marginLeft: "7%",
 					flexDirection: "column",
 					alignItems: "flex-start",
-					marginBottom: 20,
+					marginBottom: "10%,
 				}}
 			>
 				<View
@@ -53,7 +53,6 @@ const DropdownMonth = () => {
 						style={{
 							display: "flex",
 							alignItems: "flex-end",
-							marginLeft: 100,
 						}}
 					></View>
 				</View>
