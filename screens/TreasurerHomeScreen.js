@@ -1,5 +1,12 @@
 import { React, useState } from "react";
-import { TouchableOpacity, Image, View, Text, ScrollView } from "react-native";
+import {
+	TouchableOpacity,
+	Image,
+	View,
+	Text,
+	ScrollView,
+	Button,
+} from "react-native";
 import MenuOptions from "../components/MenuOptions";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
@@ -51,19 +58,14 @@ const TreasurerHomeScreen = () => {
 						<Text style={styles.gyb}>Glad you're back!</Text>
 					</View>
 				</View>
-				<View>
-					<View style={styles.notifs}>
-						<View style={styles.notificationContainer}>
-							<Text style={styles.notificationText}>
-								{" "}
-								Notifications
-							</Text>
-						</View>
 
-						<TouchableOpacity style={styles.viewAllButton}>
-							<Text style={styles.viewAllText}>View all</Text>
-						</TouchableOpacity>
-					</View>
+				<View style={styles.notificationContainer}>
+					<Text style={styles.notificationText}> Notifications</Text>
+					<Button
+						style={styles.viewAllButton}
+						title="View all "
+						color="gray"
+					></Button>
 				</View>
 
 				<View style={styles.notificationsContainer}>
