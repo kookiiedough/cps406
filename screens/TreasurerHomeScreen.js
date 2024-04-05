@@ -1,19 +1,11 @@
 import { React, useState } from "react";
-import { styles } from "../CSS/styles";
-import { View, Text, TouchableOpacity, ScrollView, Button } from "react-native";
-import DropdownYear from "../components/DropdownYear";
-import { useNavigation } from "@react-navigation/native";
+import { TouchableOpacity, Image, View, Text, ScrollView } from "react-native";
 import MenuOptions from "../components/MenuOptions";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
+import { styles } from "../CSS/styles";
 
-const ProfitTracking = () => {
-	const navigation = useNavigation();
-
-	const navigateToYearlyProfits = () => {
-		navigation.navigate("YearlyProfits");
-	};
-
+const TreasurerHomeScreen = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	const openMenu = () => {
@@ -25,94 +17,94 @@ const ProfitTracking = () => {
 	};
 
 	return (
-		<View style={{ backgroundColor: "#E8F8D8", display: "flex", flex: 1 }}>
+		<View
+			style={{
+				display: "flex",
+				justifyContent: "space-between",
+				backgroundColor: "#E8F8D8",
+				flex: 1,
+				zIndex: 1,
+			}}
+		>
 			<NavigationBar openMenu={openMenu} />
 			<MenuOptions visible={menuOpen} closeMenu={closeMenu} />
-			<ScrollView style={{ display: "flex", flex: 1 }}>
-				<View
-					style={{
-						display: "flex",
-						top: "5%",
-					}}
-				>
-					<View
-						style={{
-							display: "flex",
-							flexDirection: "row",
-							justifyContent: "space-between",
-						}}
-					>
-						<Text style={styles.headerProfitsPage}>
-							Profit Tracking
-						</Text>
-						<TouchableOpacity
-							style={styles.submitButton}
-							onPress={navigateToYearlyProfits}
-						>
-							<Text style={styles.submitText}>Submit!</Text>
-						</TouchableOpacity>
+			<ScrollView>
+				<View style={{ top: "10%" }}>
+					<View style={styles.logoContainer}>
+						<Image
+							style={styles.logoImg}
+							source={require("../assets/logo.png")}
+						/>
 					</View>
 
-					<Text style={styles.header2ProfitsPage}>
-						Select year to generate profits list.
-					</Text>
-					<DropdownYear />
-					<View style={{ display: "flex", height: "10%" }}></View>
-				</View>
-				<View style={{}}>
-					<Text style={styles.headerProfitsPage}>
-						Existing Lists:
-					</Text>
 					<View
 						style={{
 							display: "flex",
-							width: "100%",
 							flexDirection: "column",
-							alignItems: "center",
 							justifyContent: "space-between",
+							alignItems: "center",
+							position: "relative",
+							top: "15%",
 						}}
 					>
-						<TouchableOpacity style={styles.profitsListButtons}>
+						<Text style={styles.text}>Welcome !</Text>
+						<Text style={styles.gyb}>Glad you're back!</Text>
+					</View>
+				</View>
+				<View>
+					<View style={styles.notifs}>
+						<View style={styles.notificationContainer}>
+							<Text style={styles.notificationText}>
+								{" "}
+								Notifications
+							</Text>
+						</View>
+
+						<TouchableOpacity style={styles.viewAllButton}>
+							<Text style={styles.viewAllText}>View all</Text>
+						</TouchableOpacity>
+					</View>
+				</View>
+
+				<View style={styles.notificationsContainer}>
+					<TouchableOpacity style={styles.notificationButtons}>
+						<View style={styles.notificationsData}>
+							<Text style={styles.notificationTexts}>
+								Coach list | 2 days ago
+							</Text>
 							<View
 								style={{
-									display: "flex",
-									flexDirection: "column",
-									justifyContent: "space-evenly",
-									alignItems: "flex-start",
+									backgroundColor: "#DEF1CAD8",
+									height: "10%",
 								}}
-							>
-								<Text style={{ left: "5%" }}>
-									{" "}
-									2023 | 12 items
-								</Text>
-								<View
-									style={{
-										backgroundColor: "#DEF1CA",
-										height: "5%",
-									}}
-								></View>
-								<Text style={{ left: "5%" }}>
-									{" "}
-									Last accessed: 01/12/2024{" "}
-								</Text>
-							</View>
-						</TouchableOpacity>
-
-						<TouchableOpacity style={styles.profitsListButtons}>
-							<Text style={{ left: "5%" }}> 2023 | 12 items</Text>
+							></View>
+							<Text style={styles.notificationTexts}>
+								New member added: Peter Parker
+							</Text>
+						</View>
+					</TouchableOpacity>
+					<View
+						style={{
+							backgroundColor: "#E8F8D8",
+							borderRadius: 10,
+						}}
+					></View>
+					<TouchableOpacity style={styles.notificationButtons}>
+						<View style={styles.notificationsData}>
+							<Text style={styles.notificationTexts}>
+								Coach list | 4 days ago
+							</Text>
 							<View
 								style={{
 									backgroundColor: "#DEF1CA",
-									height: "5%",
+									height: "10%",
 								}}
 							></View>
-							<Text style={{ left: "5%" }}>
-								{" "}
-								Last accessed: 12/21/2022{" "}
+							<Text style={styles.notificationTexts}>
+								New member added: Tom Riddle
 							</Text>
-						</TouchableOpacity>
-					</View>
-					<Button title="View all" color="gray"></Button>
+						</View>
+					</TouchableOpacity>
 				</View>
 			</ScrollView>
 
@@ -121,4 +113,4 @@ const ProfitTracking = () => {
 	);
 };
 
-export default ProfitTracking;
+export default TreasurerHomeScreen;
