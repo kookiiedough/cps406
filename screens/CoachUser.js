@@ -14,10 +14,10 @@ const CoachUser = ({navigation, route}) => {
       {/* Logo */}
       <View style={styles.logoContainer}>
         <Image source={require('../assets/profileTennis.png')} style={styles.logo} />
-        <Text style={styles.information}>First Name</Text>
-        <Text style={styles.information}>Last Name</Text>
-        <Text style={styles.information}>Email</Text>
-        <Text style={styles.information}>Phone Number</Text>
+        <Text style={styles.information}>{user}</Text>
+        <Text style={styles.information}>King</Text>
+        <Text style={styles.information}>{user}.King@gmail.com</Text>
+        <Text style={styles.information}>647-889-9990</Text>
         <Text style={styles.normalTxt}>Edit Information</Text>
       </View>
 
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#CCE5B3',
     justifyContent: 'center',
     borderWidth: 1,
-    paddingHorizontal: 100,
+    // paddingHorizontal: 100,
     paddingVertical: 15,
     textAlign: 'center', 
     width: 300,

@@ -9,7 +9,7 @@ const PersonalDetails = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.heading}>Billie Jean King</Text>
+        <Text style={styles.heading}>Jane Eyre</Text>
       </View>
       {/* Logo */}
       <View style={styles.logoContainer}>
