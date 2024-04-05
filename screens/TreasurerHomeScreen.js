@@ -1,46 +1,51 @@
-import React from "react";
-import {
-	ImageBackground,
-	TouchableOpacity,
-	Image,
-	SafeAreaView,
-	View,
-	Text,
-} from "react-native";
+import { React, useState } from "react";
+import { TouchableOpacity, Image, View, Text } from "react-native";
+import MenuOptions from "../components/MenuOptions";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
 import { styles } from "../CSS/styles";
-import { useNavigation } from "@react-navigation/native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const TreasurerHomeScreen = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	const openMenu = () => {
+		setMenuOpen(true);
+	};
+
+	const closeMenu = () => {
+		setMenuOpen(false);
+	};
+
 	return (
 		<View
 			style={{
 				display: "flex",
-				flex: 1,
 				justifyContent: "space-between",
 				backgroundColor: "#E8F8D8",
 			}}
 		>
-			<View style={styles.logoContainer}>
-				<Image
-					style={styles.logoImg}
-					source={require("../assets/logo.png")}
-				/>
-			</View>
+			<NavigationBar openMenu={openMenu} />
+			<View style={{ top: 50 }}>
+				<View style={styles.logoContainer}>
+					<Image
+						style={styles.logoImg}
+						source={require("../assets/logo.png")}
+					/>
+				</View>
 
-			<View
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					justifyContent: "space-between",
-					alignItems: "center",
-				}}
-			>
-				<Text style={styles.text}>Welcome !</Text>
-				<Text style={styles.gyb}>Glad you're back!</Text>
+				<View
+					style={{
+						display: "flex",
+						flexDirection: "column",
+						justifyContent: "space-between",
+						alignItems: "center",
+						position: "relative",
+						top: 20,
+					}}
+				>
+					<Text style={styles.text}>Welcome !</Text>
+					<Text style={styles.gyb}>Glad you're back!</Text>
+				</View>
 			</View>
 			<View>
 				<View style={styles.notifs}>
@@ -92,6 +97,10 @@ const TreasurerHomeScreen = () => {
 					</View>
 				</TouchableOpacity>
 			</View>
+			<MenuOptions visible={menuOpen} closeMenu={closeMenu} />
+			<View style={{ height: "7%" }}></View>
+
+			<Footer />
 		</View>
 	);
 };
