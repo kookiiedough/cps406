@@ -44,7 +44,7 @@ const AddProfits = () => {
 							justifyContent: "space-between",
 							alignContent: "center",
 							width: "90%",
-							paddingTop: 10,
+							paddingTop: "5%,
 							borderRadius: 10,
 						}}
 					>
