@@ -75,7 +75,7 @@ const TreasurerHomeScreen = () => {
 							<View
 								style={{
 									backgroundColor: "#DEF1CAD8",
-									height: 20,
+									height: "10%",
 								}}
 							></View>
 							<Text style={styles.notificationTexts}>
@@ -86,7 +86,6 @@ const TreasurerHomeScreen = () => {
 					<View
 						style={{
 							backgroundColor: "#E8F8D8",
-							height: 20,
 							borderRadius: 10,
 						}}
 					></View>
@@ -98,7 +97,7 @@ const TreasurerHomeScreen = () => {
 							<View
 								style={{
 									backgroundColor: "#DEF1CA",
-									height: 20,
+									height: "10%",
 								}}
 							></View>
 							<Text style={styles.notificationTexts}>
