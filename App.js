@@ -31,11 +31,40 @@ import PaymentFailureScreen from './screens/PaymentFailure';
 import MailPageScreen from './screens/MailPage';
 import PersonalDetailsScreen from './screens/PersonalDetails';
 
-
+//Sitara
+import React, { useState } from "react";
+import TreasurerHomeScreen from "./app/screens/TreasurerHomeScreen";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import NavigationBar from "./app/components/NavigationBar";
+import Footer from "./app/components/Footer";
+import MenuOptions from "./app/components/MenuOptions";
+import AddDebts from "./app/screens/AddDebts";
+import ProfitTracking from "./app/screens/ProfitTracking";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import AddProfits from "./app/screens/AddProfits";
+import YearlyProfits from "./app/screens/YearlyProfits";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	const openMenu = () => {
+		setMenuOpen(true);
+	};
+
+	const closeMenu = () => {
+		setMenuOpen(false);
+	};
+
+	const [page, setPage] = useState("home");
+
+	const switchPage = (page) => {
+		setPage(page);
+	};
+
   return (
 
     <NavigationContainer>
@@ -68,8 +97,6 @@ export default function App() {
         <Stack.Screen component={ParticipantsList} name="ParticipantsList" options={{title: "Participants List"}} />
         <Stack.Screen component={UpcomingEventsFilled} name="UpcomingEventsFilled" options={{title: "Upcoming Events Filled"}} />
 
-
-
         <Stack.Screen component={HomePageScreen} name="Home" options={{ title: "Home" }} />
         <Stack.Screen component={LevelSelectScreen} name="Browse" options={{ title: "Home" }} />
         <Stack.Screen component={BeginnerClassesScreen} name="Beginner" options={{ title: "Beginner" }} />
@@ -81,6 +108,18 @@ export default function App() {
         <Stack.Screen component={MailPageScreen} name="Mail" options={{ title: "mail" }} />
         <Stack.Screen component={PersonalDetailsScreen} name="User" options={{ title: "User" }} />
 
+        //Sitara
+        <Stack.Screen component={TreasurerHomeScreen} name="Home" options={{  }} style={{ backgroundColor: "#E8F8D8" }}/>
+		    <Stack.Screen component={AddDebts} name="AddDebts" />
+				<Stack.Screen component={AddProfits} name="AddProfits" />
+				<Stack.Screen component={ProfitTracking} name="ProfitTracking" />
+				<Stack.Screen component={YearlyProfits} name="YearlyProfits"/>
+
+				{/* Implement these after everyone adds to git */}
+				{/* <Stack.Screen component={IncomeStatements} name="IncomeStatements" />
+        <Stack.Screen component={Debts} name="Debts" />
+        <Stack.Screen component={CoachList} name="CoachList" />
+        <Stack.Screen component={Members} name="Members" /> */}
 
       </Stack.Navigator>
       <StatusBar style="auto" />
