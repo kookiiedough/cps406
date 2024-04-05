@@ -1,12 +1,5 @@
 import { React, useState } from "react";
-import {
-	TouchableOpacity,
-	Image,
-	View,
-	Text,
-	ScrollView,
-	Button,
-} from "react-native";
+import { TouchableOpacity, Image, View, Text, ScrollView, Button } from "react-native";
 import MenuOptions from "../components/MenuOptions";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
