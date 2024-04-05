@@ -37,7 +37,7 @@ const DropdownYear = () => {
 					marginLeft: "7%",
 					flexDirection: "column",
 					alignItems: "flex-start",
-					marginBottom: 20,
+					marginBottom: "10%,
 				}}
 			>
 				<View
@@ -57,7 +57,6 @@ const DropdownYear = () => {
 						style={{
 							display: "flex",
 							alignItems: "flex-end",
-							marginLeft: 100,
 						}}
 					></View>
 				</View>
