@@ -36,9 +36,6 @@ import PersonalDetailsScreen from './screens/PersonalDetails';
 
 //Sitara
 import TreasurerHomeScreen from "./screens/TreasurerHomeScreen";
-import NavigationBar from "./components/NavigationBar";
-import Footer from "./components/Footer";
-import MenuOptions from "./components/MenuOptions";
 import AddDebts from "./screens/AddDebts";
 import ProfitTracking from "./screens/ProfitTracking";
 import AddProfits from "./screens/AddProfits";
