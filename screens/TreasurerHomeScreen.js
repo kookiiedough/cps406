@@ -29,7 +29,7 @@ const TreasurerHomeScreen = () => {
 			<NavigationBar openMenu={openMenu} />
             <MenuOptions visible={menuOpen} closeMenu={closeMenu} />
 			<ScrollView>
-				<View style={{ top: 50 }}>
+				<View style={{ top: "10%" }}>
 					<View style={styles.logoContainer}>
 						<Image
 							style={styles.logoImg}
@@ -44,7 +44,7 @@ const TreasurerHomeScreen = () => {
 							justifyContent: "space-between",
 							alignItems: "center",
 							position: "relative",
-							top: 20,
+							top: "15%",
 						}}
 					>
 						<Text style={styles.text}>Welcome !</Text>
