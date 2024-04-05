@@ -1,15 +1,25 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import Table from "../components/Table";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/native";
-import { styles } from "../CSS/styles";
+import NavigationBar from "../components/NavigationBar";
+import MenuOptions from "../components/MenuOptions";
+import Footer from "../components/Footer";
 // import { NavigationContainer } from "@react-navigation/native";
 // import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 function YearlyProfits() {
 	const [year, setMyYear] = useState("2024");
+
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	const openMenu = () => {
+		setMenuOpen(true);
+	};
+
+	const closeMenu = () => {
+		setMenuOpen(false);
+	};
 
 	const navigation = useNavigation();
 
@@ -23,43 +33,40 @@ function YearlyProfits() {
 		<View
 			style={{
 				display: "flex",
-				alignItems: "flex-start",
+				flex: 1,
 				backgroundColor: "#E8F8D8",
+				justifyContent: "space-evenly",
 			}}
 		>
-			<View
-				style={{
-					display: "flex",
-					flexDirection: "row",
-					justifyContent: "center",
-					top: 60,
-					position: "absolute",
-					alignItems: "space-evenly",
-				}}
-			>
-				<View style={{ marginLeft: 20 }}>
-					<Text style={{ bottom: 50, fontSize: 23 }}>
-						Total profits for: {year}
-					</Text>
-				</View>
+			<NavigationBar openMenu={openMenu} />
+			<MenuOptions visible={menuOpen} closeMenu={closeMenu} />
+
+			<ScrollView>
 				<View>
 					<TouchableOpacity
 						style={{
-							bottom: 45,
-							left: 120,
+							top: "80%",
+							left: "70%",
 							backgroundColor: "#C6DCB0",
 							paddingVertical: 10,
 							borderRadius: 10,
 							paddingHorizontal: 10,
+							width: "15%",
 						}}
 						onPress={navigateToAddProfits}
 					>
 						<Text>Add: </Text>
 					</TouchableOpacity>
 				</View>
-			</View>
+				<View style={{ left: "5%" }}>
+					<Text style={{ fontSize: 23 }}>
+						Total profits for: {year}
+					</Text>
+				</View>
 
-			<Table />
+				<Table />
+			</ScrollView>
+			<Footer />
 		</View>
 	);
 }
