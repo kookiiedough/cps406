@@ -33,8 +33,8 @@ import PaymentFailureScreen from './screens/PaymentFailure';
 import MailPageScreen from './screens/MailPage';
 import PersonalDetailsScreen from './screens/PersonalDetails';
 
-//Sitara
 
+//Sitara
 import TreasurerHomeScreen from "./screens/TreasurerHomeScreen";
 import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
