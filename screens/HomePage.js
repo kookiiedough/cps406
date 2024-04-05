@@ -18,7 +18,11 @@ const HomePage = ({navigation}) => {
       </View>
       <View style={styles.logoContainer}>
         <Image source={require('../assets/tennis.png')} style={styles.logo} />
-        <Text style={styles.heading}>Select a Class to Begin</Text>
+        
+        <TouchableOpacity onPress={()=>navigation.navigate('UpcomingEventsFilled')}>
+          <Text style={styles.heading}>Select a Class to Begin</Text>
+        </TouchableOpacity>
+
       </View>
         <TouchableOpacity
           style={[styles.button, { backgroundColor: '#95BB6E' }]}

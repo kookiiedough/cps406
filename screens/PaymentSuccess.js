@@ -31,7 +31,7 @@ const PaymentSuccess = ({navigation, route}) => {
         <View style={styles.footer}>
           {/* Icon 1 */}
           <TouchableOpacity
-           onPress={() => [navigation.navigate('Browse')]}>
+           onPress={() => [navigation.navigate('UpcomingEventsFilled')]}>
             <Image source={require("../assets/find.png")} style={styles.footerIcon} />
           </TouchableOpacity>
           {/* Icon 2 */}

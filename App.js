@@ -16,6 +16,8 @@ import CoachInvoice from './screens/CoachInvoice';
 import CoachSchedulePage from './screens/CoachSchedulePage';
 import CoachEditSchedulePage from './screens/CoachEditSchedulePage';
 import ParticipantsList from './screens/ParticipantsList';
+import UpcomingEventsFilled from './screens/UpcomingEventsFilled';
+
 
 //reyhan
 import HomePageScreen from './screens/HomePage';
@@ -64,6 +66,7 @@ export default function App() {
         <Stack.Screen component={CoachSchedulePage} name="CoachSchedulePage" options={{title: "Coach Schedule Page"}} />
         <Stack.Screen component={CoachEditSchedulePage} name="CoachEditSchedulePage" options={{title: "Coach Edit Schedule Page"}} />
         <Stack.Screen component={ParticipantsList} name="ParticipantsList" options={{title: "Participants List"}} />
+        <Stack.Screen component={UpcomingEventsFilled} name="UpcomingEventsFilled" options={{title: "Upcoming Events Filled"}} />
 
 
 
