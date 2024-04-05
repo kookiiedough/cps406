@@ -35,14 +35,14 @@ import PersonalDetailsScreen from './screens/PersonalDetails';
 
 //Sitara
 
-import TreasurerHomeScreen from "./app/screens/TreasurerHomeScreen";
-import NavigationBar from "./app/components/NavigationBar";
-import Footer from "./app/components/Footer";
-import MenuOptions from "./app/components/MenuOptions";
-import AddDebts from "./app/screens/AddDebts";
-import ProfitTracking from "./app/screens/ProfitTracking";
-import AddProfits from "./app/screens/AddProfits";
-import YearlyProfits from "./app/screens/YearlyProfits";
+import TreasurerHomeScreen from "./screens/TreasurerHomeScreen";
+import NavigationBar from "./components/NavigationBar";
+import Footer from "./components/Footer";
+import MenuOptions from "./components/MenuOptions";
+import AddDebts from "./screens/AddDebts";
+import ProfitTracking from "./screens/ProfitTracking";
+import AddProfits from "./screens/AddProfits";
+import YearlyProfits from "./screens/YearlyProfits";
 
 const Stack = createNativeStackNavigator();
 
