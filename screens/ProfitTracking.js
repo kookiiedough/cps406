@@ -32,7 +32,7 @@ const ProfitTracking = () => {
 				<View
 					style={{
 						display: "flex",
-						top: "3%",
+						top: "5%",
 					}}
 				>
 					<View
@@ -40,7 +40,6 @@ const ProfitTracking = () => {
 							display: "flex",
 							flexDirection: "row",
 							justifyContent: "space-between",
-							marginTop: 0,
 						}}
 					>
 						<Text style={styles.headerProfitsPage}>
@@ -53,15 +52,12 @@ const ProfitTracking = () => {
 							<Text style={styles.submitText}>Submit!</Text>
 						</TouchableOpacity>
 					</View>
-					<View
-						style={{ backgroundColor: "#E8F8D8", height: 20 }}
-					></View>
+
 					<Text style={styles.header2ProfitsPage}>
-						Select the year you would like to generate a profits
-						list for.
+						Select year to generate profits list.
 					</Text>
 					<DropdownYear />
-					<View style={{ display: "flex", height: 20 }}></View>
+					<View style={{ display: "flex", height: "10%" }}></View>
 				</View>
 				<View style={{}}>
 					<Text style={styles.headerProfitsPage}>
@@ -85,17 +81,17 @@ const ProfitTracking = () => {
 									alignItems: "flex-start",
 								}}
 							>
-								<Text style={{ left: 10 }}>
+								<Text style={{ left: "5%" }}>
 									{" "}
 									2023 | 12 items
 								</Text>
 								<View
 									style={{
 										backgroundColor: "#DEF1CA",
-										height: 10,
+										height: "5%",
 									}}
 								></View>
-								<Text style={{ left: 10 }}>
+								<Text style={{ left: "5%" }}>
 									{" "}
 									Last accessed: 01/12/2024{" "}
 								</Text>
@@ -103,14 +99,14 @@ const ProfitTracking = () => {
 						</TouchableOpacity>
 
 						<TouchableOpacity style={styles.profitsListButtons}>
-							<Text style={{ left: 10 }}> 2023 | 12 items</Text>
+							<Text style={{ left: "5%" }}> 2023 | 12 items</Text>
 							<View
 								style={{
 									backgroundColor: "#DEF1CA",
-									height: 10,
+									height: "5%",
 								}}
 							></View>
-							<Text style={{ left: 10 }}>
+							<Text style={{ left: "5%" }}>
 								{" "}
 								Last accessed: 12/21/2022{" "}
 							</Text>
