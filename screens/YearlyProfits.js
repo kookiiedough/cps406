@@ -48,10 +48,10 @@ function YearlyProfits() {
 							top: "80%",
 							left: "70%",
 							backgroundColor: "#C6DCB0",
-							paddingVertical: 10,
+							paddingVertical: "3%,
 							borderRadius: 10,
-							paddingHorizontal: 10,
-							width: "15%",
+							paddingHorizontal: "5%,
+							width: "25%",
 						}}
 						onPress={navigateToAddProfits}
 					>
