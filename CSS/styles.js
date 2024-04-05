@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
 
 	searchBarContainer: {
 		// marginTop: 20,
-		marginRight: 30,
+		marginRight: "5%",
 	},
 
 	messageImg: {
@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
 
 	messageContainer: {
 		// marginTop: 20,
-		marginLeft: 30,
+		marginLeft: "5%",
 	},
 
 	bottomButtons: {
@@ -27,7 +27,6 @@ export const styles = StyleSheet.create({
 		justifyContent: "space-between",
 		backgroundColor: "pink",
 		width: "100%",
-		top: 250,
 	},
 
 	text: {
@@ -51,11 +50,11 @@ export const styles = StyleSheet.create({
 
 	logoContainer: {
 		alignItems: "center",
-		marginBottom: 10,
+		marginBottom: "5%",
 	},
 
 	welcomeBack: {
-		marginTop: 150,
+		marginTop: "10%",
 		position: "relative",
 	},
 
@@ -63,24 +62,17 @@ export const styles = StyleSheet.create({
 		fontSize: 20,
 	},
 
-	viewAllButton: {
-		backgroundColor: "#D2E6BE",
-		marginRight: 30,
-		marginTop: 150,
-		paddingTop: 10,
-		paddingBottom: 10,
-		paddingHorizontal: 10,
-		borderRadius: 10,
-	},
-
 	notifs: {
-		flexDirection: "row",
 		// alignItems: "center",
-		justifyContent: "space-between",
+		display: "flex",
+		flexDirection: "row",
+		alignItems: "space-between",
+		justifyContent: "space-evenly",
 	},
 
-	viewAllText: {
-		fontSize: 18,
+	viewAllButton: {
+		right: "30%",
+		top: 250,
 	},
 
 	notificationText: {
@@ -88,8 +80,13 @@ export const styles = StyleSheet.create({
 	},
 
 	notificationContainer: {
-		marginLeft: 30,
-		marginTop: 150,
+		display: "flex",
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: "space-between",
+		left: "5%",
+		marginTop: "50%",
+		width: "90%",
 	},
 
 	notificationButtons: {
@@ -107,11 +104,11 @@ export const styles = StyleSheet.create({
 	notificationsContainer: {
 		flexDirection: "column",
 		justifyContent: "space-between",
-		marginTop: 25,
+		marginTop: "5%",
 	},
 
 	notificationTexts: {
-		marginLeft: 20,
+		marginLeft: "5%",
 	},
 
 	navBar: {
@@ -124,7 +121,6 @@ export const styles = StyleSheet.create({
 
 		justifyContent: "space-between",
 		height: "40%",
-		bottom: 55,
 	},
 
 	navBarPosition: {
@@ -146,13 +142,11 @@ export const styles = StyleSheet.create({
 
 	hamburger: {
 		position: "relative",
-		marginTop: 2,
-		marginRight: 30,
+		marginRight: "7%",
 	},
 
 	logo: {
-		marginTop: 1,
-		marginLeft: 30,
+		marginLeft: "7%",
 	},
 
 	background: {
@@ -174,18 +168,16 @@ export const styles = StyleSheet.create({
 
 	submitButton: {
 		backgroundColor: "#C6DCB0",
-		marginRight: 30,
-		paddingTop: 10,
-		paddingBottom: 10,
-		paddingHorizontal: 10,
+		marginRight: "5%",
+		paddingVertical: "3%",
+		paddingHorizontal: "5%",
 		borderRadius: 10,
 	},
 
 	addProfitsSquare: {
 		backgroundColor: "red",
-		paddingTop: 30,
-		paddingBottom: 30,
-		width: 200,
+		paddingVertical: "20%",
+		width: "50%",
 		flexDirection: "column",
 		alignItems: "center",
 		borderRadius: 15,
@@ -196,24 +188,13 @@ export const styles = StyleSheet.create({
 		justifyContent: "space-between",
 	},
 
-	submitButtonContainer: {
-		marginLeft: 110,
-	},
-
 	textForAdd: {
 		textAlign: "left",
 	},
 
-	menuContainer: {
-		position: "absolute",
-		marginLeft: "68%",
-		zIndex: 2,
-		marginTop: -185,
-	},
-
 	menuItem: {
 		fontSize: 18,
-		marginVertical: 15,
+		marginVertical: "7%",
 	},
 
 	menuText: {
@@ -246,14 +227,6 @@ export const styles = StyleSheet.create({
 		backgroundColor: "#E8F2DE",
 	},
 
-	menuPosition: {
-		flex: 1,
-		position: "absolute",
-		width: 200,
-		height: 20,
-		backgroundColor: "orange",
-	},
-
 	addDebtsContainer: {
 		flex: 1,
 	},
@@ -270,6 +243,6 @@ export const styles = StyleSheet.create({
 		paddingVertical: "5%",
 		borderRadius: 10,
 		width: "85%",
-		marginVertical: 10,
+		marginVertical: "3%",
 	},
 });
