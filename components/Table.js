@@ -4,7 +4,7 @@ import { DataTable } from "react-native-paper";
 
 const Table = () => {
 	return (
-		<DataTable style={{ top: 70, left: 10 }}>
+		<DataTable style={{ top: "10%" }}>
 			<DataTable.Header style={styles.tableHeader}>
 				<DataTable.Title>Month</DataTable.Title>
 				<DataTable.Title>Amount</DataTable.Title>
