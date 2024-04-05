@@ -2,6 +2,8 @@ import * as React from 'react';
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React, { useState } from "react";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 // Aamna
 import LoadingPage from "./screens/LoadingPage";
@@ -32,16 +34,13 @@ import MailPageScreen from './screens/MailPage';
 import PersonalDetailsScreen from './screens/PersonalDetails';
 
 //Sitara
-import React, { useState } from "react";
+
 import TreasurerHomeScreen from "./app/screens/TreasurerHomeScreen";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import NavigationBar from "./app/components/NavigationBar";
 import Footer from "./app/components/Footer";
 import MenuOptions from "./app/components/MenuOptions";
 import AddDebts from "./app/screens/AddDebts";
 import ProfitTracking from "./app/screens/ProfitTracking";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AddProfits from "./app/screens/AddProfits";
 import YearlyProfits from "./app/screens/YearlyProfits";
 
