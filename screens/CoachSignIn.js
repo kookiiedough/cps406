@@ -93,6 +93,20 @@ const CoachSignIn = ({navigation}) => {
                         </View>
                     </TouchableHighlight>
 
+
+                    // for treasurer (just change the styling + navigation)
+                    // <TouchableHighlight
+                    //     style={styles.coachBtn}
+                    //     activeOpacity={0.7}
+                    //     onPress={() => [navigation.navigate("CoachSignIn")]}
+                    // >   
+                    //     <View style={styles.signInContainer}>
+                    //         <Text style={styles.smallTxt}>Are you a Treasurer? </Text>
+                    //         <Text style={styles.signInText}>Treasurer Sign In</Text>
+                    //     </View>
+                    // </TouchableHighlight>
+                    
+
                 </View>
             </View>
         </ScrollView>
