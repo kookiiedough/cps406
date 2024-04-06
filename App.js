@@ -31,7 +31,10 @@ import PaymentFailureScreen from './screens/PaymentFailure';
 import MailPageScreen from './screens/MailPage';
 import PersonalDetailsScreen from './screens/PersonalDetails';
 
-
+// Rana
+import ClubCoaches from './screens/ClubCoaches';
+import IncomeState from './screens/IncomeState';
+import ClubMembers from './screens/ClubMembers';
 
 const Stack = createNativeStackNavigator();
 
@@ -81,6 +84,11 @@ export default function App() {
         <Stack.Screen component={MailPageScreen} name="Mail" options={{ title: "mail" }} />
         <Stack.Screen component={PersonalDetailsScreen} name="User" options={{ title: "User" }} />
 
+        <Stack.Screen component={ClubCoaches} name="ClubCoaches" options={{ title: "ClubCoaches" }} />
+        <Stack.Screen component={IncomeState} name="IncomeState" options={{ title: "IncomeState" }} />
+        <Stack.Screen component={ClubMembers} name="ClubMembers" options={{ title: "ClubMembers" }} />
+
+        <Stack.Screen component={ClubMembers} name="Browse" options={{ title: "Browse" }} />
 
       </Stack.Navigator>
       <StatusBar style="auto" />
