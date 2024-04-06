@@ -88,7 +88,7 @@ export default function App() {
         <Stack.Screen component={IncomeState} name="IncomeState" options={{ title: "IncomeState" }} />
         <Stack.Screen component={ClubMembers} name="ClubMembers" options={{ title: "ClubMembers" }} />
 
-        <Stack.Screen component={ClubMembers} name="Browse" options={{ title: "Browse" }} />
+        <Stack.Screen component={ClubMembers} name="Browse2" options={{ title: "Browse" }} />
 
       </Stack.Navigator>
       <StatusBar style="auto" />

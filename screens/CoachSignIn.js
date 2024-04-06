@@ -94,7 +94,7 @@ const CoachSignIn = ({navigation}) => {
                     </TouchableHighlight>
 
 
-                    // for treasurer (just change the styling + navigation)
+                    {/* // for treasurer (just change the styling + navigation)
                     // <TouchableHighlight
                     //     style={styles.coachBtn}
                     //     activeOpacity={0.7}
@@ -104,7 +104,7 @@ const CoachSignIn = ({navigation}) => {
                     //         <Text style={styles.smallTxt}>Are you a Treasurer? </Text>
                     //         <Text style={styles.signInText}>Treasurer Sign In</Text>
                     //     </View>
-                    // </TouchableHighlight>
+                    // </TouchableHighlight> */}
                     
 
                 </View>
