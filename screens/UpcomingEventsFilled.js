@@ -40,7 +40,7 @@ const UpcomingEventsFilled = ({navigation}) => {
         </TouchableOpacity>
         {/* Icon 2 */}
         <TouchableOpacity
-          onPress={() => [navigation.navigate('Browse')]}>
+          onPress={() => [navigation.navigate('UpcomingEventsFilled')]}>
           <Image source={require("../assets/calendar.png")} style={styles.calenIcon} />
         </TouchableOpacity>
         {/* Icon 3 */}

@@ -9,7 +9,7 @@ const PersonalDetails = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.heading}>Jane Eyre</Text>
+        <Text style={styles.heading}>Club Member</Text>
       </View>
       {/* Logo */}
       <View style={styles.logoContainer}>
@@ -26,7 +26,7 @@ const PersonalDetails = () => {
           <Image source={require("../assets/find.png")} style={styles.footerIcon} />
         </TouchableOpacity>
         {/* Icon 2 */}
-        <TouchableOpacity onPress={() => navigation.navigate('Browse')}>
+        <TouchableOpacity onPress={() => navigation.navigate('UpcomingEventsFilled')}>
           <Image source={require("../assets/calendar.png")} style={styles.footerIcon} />
         </TouchableOpacity>
         {/* Icon 3 */}

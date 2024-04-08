@@ -50,7 +50,7 @@ const LevelSelect = () => {
         </TouchableOpacity>
         {/* Icon 2 */}
         <TouchableOpacity
-          onPress={() => [navigation.navigate('Browse')]}>
+          onPress={() => [navigation.navigate('UpcomingEventsFilled')]}>
           <Image source={require("../assets/calendar.png")} style={styles.footerIcon} />
         </TouchableOpacity>
         {/* Icon 3 */}

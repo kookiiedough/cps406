@@ -31,21 +31,17 @@ const PaymentSuccess = ({navigation, route}) => {
         <View style={styles.footer}>
           {/* Icon 1 */}
           <TouchableOpacity
-           onPress={() => [navigation.navigate('UpcomingEventsFilled')]}>
+           onPress={() => [navigation.navigate('Browse')]}>
             <Image source={require("../assets/find.png")} style={styles.footerIcon} />
           </TouchableOpacity>
           {/* Icon 2 */}
           <TouchableOpacity
-            onPress={() => {
-              /* navigation.navigate('Calendar') */
-            }}>
-            <Image source={require("../assets/calendar.png")} style={styles.footerIcon} />
+            onPress={() => [navigation.navigate('UpcomingEventsFilled')]}>
+              <Image source={require("../assets/calendar.png")} style={styles.footerIcon} />
           </TouchableOpacity>
           {/* Icon 3 */}
           <TouchableOpacity
-            onPress={() => {
-              /* navigation.navigate('User') */
-            }}>
+            onPress={() => { navigation.navigate('User') }}>
             <Image source={require("../assets/user.png")} style={styles.footerIcon} />
           </TouchableOpacity>
         </View>
