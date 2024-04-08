@@ -18,7 +18,6 @@ import CoachEditSchedulePage from './screens/CoachEditSchedulePage';
 import ParticipantsList from './screens/ParticipantsList';
 import UpcomingEventsFilled from './screens/UpcomingEventsFilled';
 
-
 //reyhan
 import HomePageScreen from './screens/HomePage';
 import LevelSelectScreen from './screens/LevelSelect';
@@ -35,6 +34,12 @@ import PersonalDetailsScreen from './screens/PersonalDetails';
 import ClubCoaches from './screens/ClubCoaches';
 import IncomeState from './screens/IncomeState';
 import ClubMembers from './screens/ClubMembers';
+
+//theresa
+import TreasurerSignIn  from './screens/TreasurerSignIn';
+import IncomeStatement  from './screens/IncomeStatement';
+import UnpaidDebts from './screens/UnpaidDebts';
+import CoachSchedules from './screens/CoachSchedules';
 
 const Stack = createNativeStackNavigator();
 
@@ -86,9 +91,14 @@ export default function App() {
 
         <Stack.Screen component={ClubCoaches} name="ClubCoaches" options={{ title: "ClubCoaches" }} />
         <Stack.Screen component={IncomeState} name="IncomeState" options={{ title: "IncomeState" }} />
-        <Stack.Screen component={ClubMembers} name="ClubMembers" options={{ title: "ClubMembers" }} />
+        <Stack.Screen component={ClubMembers} name="ClubMembers" options={{ title: "ClubMembers" }} /> 
 
         <Stack.Screen component={ClubMembers} name="Browse2" options={{ title: "Browse" }} />
+
+        <Stack.Screen component={TreasurerSignIn} name="TreasurerSignIn" options={{ title: "TreasurerSignIn" }} />
+        <Stack.Screen component={IncomeStatement} name="IncomeStatement" options={{ title: "IncomeStatement" }} />
+        <Stack.Screen component={UnpaidDebts} name="UnpaidDebts" options={{ title: "UnpaidDebts" }} />
+        <Stack.Screen component={CoachSchedules} name="CoachSchedules" options={{ title: "CoachSchedules" }} /> 
 
       </Stack.Navigator>
       <StatusBar style="auto" />
