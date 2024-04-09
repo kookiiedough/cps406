@@ -9,7 +9,7 @@ function NavigationBar(props) {
 	const navigation = useNavigation();
 
 	const navigateToTreasurerHomeScreen = () => {
-		navigation.navigate("Home");
+		navigation.navigate("TreasurerHomeScreen");
 	};
 
 	const handleHamburgerMenuButtonPress = () => {

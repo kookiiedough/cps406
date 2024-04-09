@@ -85,12 +85,7 @@ const TreasurerHomeScreen = () => {
 							</Text>
 						</View>
 					</TouchableOpacity>
-					<View
-						style={{
-							backgroundColor: "#E8F8D8",
-							borderRadius: 10,
-						}}
-					></View>
+
 					<TouchableOpacity style={styles.notificationButtons}>
 						<View style={styles.notificationsData}>
 							<Text style={styles.notificationTexts}>

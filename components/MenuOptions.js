@@ -3,7 +3,6 @@ import React from "react";
 import { TouchableOpacity, View, Text } from "react-native";
 import { styles } from "../CSS/styles";
 import { useNavigation } from "@react-navigation/native";
-import TreasurerHomeScreen from "../screens/TreasurerHomeScreen";
 
 const MenuOptions = (props) => {
 	const navigation = useNavigation();
@@ -11,6 +10,26 @@ const MenuOptions = (props) => {
 	const navigateToProfitTracking = () => {
 		navigation.navigate("ProfitTracking");
 	};
+
+	const navigateToIncomeStatements = () => {
+		navigation.navigate("IncomeStatement");
+	};
+
+	const navigateToUnpaidDebts = () => {
+		navigation.navigate("UnpaidDebts");
+	};
+
+	const navigateToClubCoaches = () => {
+		navigation.navigate("ClubCoaches");
+	};
+
+	const navigateToClubMembers = () => {
+		navigation.navigate("ClubMembers");
+	};
+
+    const navigateToCoachSchedules = () => {
+        navigation.navigate("CoachSchedules")
+    }
 
 	return (
 		<View
@@ -28,7 +47,7 @@ const MenuOptions = (props) => {
 		>
 			<View
 				style={{
-					backgroundColor: "white",
+					backgroundColor: "#E3EDD8",
 					height: "100%",
 					width: "100%",
 					display: "flex",
@@ -37,18 +56,36 @@ const MenuOptions = (props) => {
 				}}
 			>
 				<TouchableOpacity style={{}}>
-					<Text style={styles.menuItem}>Income Statements</Text>
+					<Text
+						style={styles.menuItem}
+						onPress={navigateToIncomeStatements}
+					>
+						Income Statements
+					</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={{}} onPress={navigateToProfitTracking}>
 					<Text style={styles.menuItem}>Profit tracking</Text>
 				</TouchableOpacity>
-				<TouchableOpacity style={{}}>
+				<TouchableOpacity style={{}} onPress={navigateToUnpaidDebts}>
 					<Text style={styles.menuItem}>Debts</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={{}}>
-					<Text style={styles.menuItem}>Coach list</Text>
+					<Text
+						style={styles.menuItem}
+						onPress={navigateToClubCoaches}
+					>
+						Coach list
+					</Text>
 				</TouchableOpacity>
-				<TouchableOpacity style={{}}>
+                <TouchableOpacity style={{}}>
+					<Text
+						style={styles.menuItem}
+						onPress={navigateToCoachSchedules}
+					>
+						Schedule
+					</Text>
+				</TouchableOpacity>
+				<TouchableOpacity style={{}} onPress={navigateToClubMembers}>
 					<Text style={styles.menuItem}>Members</Text>
 				</TouchableOpacity>
 				<TouchableOpacity onPress={() => props.closeMenu()}>
