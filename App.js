@@ -108,12 +108,12 @@ export default function App() {
         <Stack.Screen component={UnpaidDebts} name="UnpaidDebts" options={{ title: "UnpaidDebts" }} />
         <Stack.Screen component={CoachSchedules} name="CoachSchedules" options={{ title: "CoachSchedules" }} /> 
 
-  	<Stack.Screen component={TreasurerHomeScreen} name="Home" options={{}} style={{ backgroundColor: "#E8F8D8" }}/>
-	<Stack.Screen component={AddDebts} name="AddDebts" />
-	<Stack.Screen component={AddProfits} name="AddProfits" />
-	<Stack.Screen component={ProfitTracking} name="ProfitTracking"/>
-	<Stack.Screen component={YearlyProfits} name="YearlyProfits"	/>
-        <Stack.Screen component={YearlyProfitsWithData} name="YearlyProfitsWithData"	/>
+	<Stack.Screen component={TreasurerHomeScreen} name="Home" options={{ title: "Home"}} style={{ backgroundColor: "#E8F8D8" }}/>
+	<Stack.Screen component={AddDebts} name="AddDebts" options={{ title: "Add Debts"}} />
+	<Stack.Screen component={AddProfits} name="AddProfits" options={{ title: "Add Profit"}}/>
+	<Stack.Screen component={ProfitTracking} name="ProfitTracking" options={{ title: "Yearly Profits"}}/>
+	<Stack.Screen component={YearlyProfits} name="YearlyProfits" options={{ title: "Current Profits"}}	/>
+        <Stack.Screen component={YearlyProfitsWithData} name="YearlyProfitsWithData" options={{ title: "Current Year's Profits"}}	/>
 
       </Stack.Navigator>
       <StatusBar style="auto" />
