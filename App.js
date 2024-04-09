@@ -41,6 +41,14 @@ import IncomeStatement  from './screens/IncomeStatement';
 import UnpaidDebts from './screens/UnpaidDebts';
 import CoachSchedules from './screens/CoachSchedules';
 
+//Sitara
+import TreasurerHomeScreen from "./screens/TreasurerHomeScreen";
+import AddDebts from "./screens/AddDebts";
+import ProfitTracking from "./screens/ProfitTracking";
+import AddProfits from "./screens/AddProfits";
+import YearlyProfits from "./screens/YearlyProfits";
+import YearlyProfitsWithData from "./screens/YearlyProfitsWithData";
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -99,6 +107,13 @@ export default function App() {
         <Stack.Screen component={IncomeStatement} name="IncomeStatement" options={{ title: "IncomeStatement" }} />
         <Stack.Screen component={UnpaidDebts} name="UnpaidDebts" options={{ title: "UnpaidDebts" }} />
         <Stack.Screen component={CoachSchedules} name="CoachSchedules" options={{ title: "CoachSchedules" }} /> 
+
+  			<Stack.Screen component={TreasurerHomeScreen} name="Home" options={{}} style={{ backgroundColor: "#E8F8D8" }}/>
+				<Stack.Screen component={AddDebts} name="AddDebts" />
+				<Stack.Screen component={AddProfits} name="AddProfits" />
+				<Stack.Screen component={ProfitTracking} name="ProfitTracking"/>
+				<Stack.Screen component={YearlyProfits} name="YearlyProfits"	/>
+        <Stack.Screen component={YearlyProfitsWithData} name="YearlyProfitsWithData"	/>
 
       </Stack.Navigator>
       <StatusBar style="auto" />
