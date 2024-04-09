@@ -26,7 +26,6 @@ const ClubCoaches = () => {
 
 	return (
 		<View style={styles.container}>
-			<MenuOptions visible={menuOpen} closeMenu={closeMenu} />
 			<Text style={styles.h1}>List of Club Coaches</Text>
 
 			{/* Display coaches horizontally */}

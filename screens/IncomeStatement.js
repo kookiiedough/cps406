@@ -54,7 +54,6 @@ const IncomeStatement = () => {
 	return (
 		<View style={styles.container}>
 			<Text style={styles.baseText}>
-				<MenuOptions visible={menuOpen} closeMenu={closeMenu} />
 				<Text style={styles.titleText}>
 					{titleText}
 					{"\n"}
