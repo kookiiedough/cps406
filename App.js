@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoadingPage from "./screens/LoadingPage";
 import MemberCreateAccount from "./screens/MemberCreateAccount";
 import MemberSignIn from "./screens/MemberSignIn";
-import TryAgainCreatingAcc from "./screens/TryAgainCreatingAcc";
+import TryAgainCreatingAcc from "./screens/TryAgainCreatingAcc"; 
 import CoachSignIn from './screens/CoachSignIn';
 import HomeCoach from './screens/HomeCoach';
 import CoachMail from './screens/CoachMail';
