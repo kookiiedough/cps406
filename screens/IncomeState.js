@@ -13,6 +13,30 @@ import { useNavigation } from "@react-navigation/native";
 const IncomeState = () => {
 	const navigation = useNavigation();
 
+    const handleCellPress2 = () => {
+        Alert.prompt(
+          "Enter Revenue and Expenses",
+          null,
+          [
+            {
+              text: "Submit",
+              onPress: (input) => {
+                const [revenue, expenses] = input.split(',');
+                console.log("Revenue:", revenue.trim());
+                console.log("Expenses:", expenses.trim());
+              }
+            },
+            {
+              text: "Cancel",
+              onPress: () => console.log("Canceled"),
+              style: "cancel"
+            }
+          ],
+          "plain-text",
+          ','
+        );
+      };
+
 	const navigateToTreasurerHomeScreen = () => {
 		navigation.navigate("TreasurerHomeScreen");
 	};
@@ -86,12 +110,13 @@ const IncomeState = () => {
 				</View>
 			</View>
 
-			<TouchableOpacity
+            {/* i just added a button that takes input you can remove it if you prefer this one */}
+			{/* <TouchableOpacity
 				onPress={() => console.log("Adding Expenses or Revenue")}
 				style={styles.addButton}
 			>
 				<Text style={styles.buttonText}>+ Add</Text>
-			</TouchableOpacity>
+			</TouchableOpacity> */}
 
 			<Text></Text>
 			<Button
@@ -99,6 +124,13 @@ const IncomeState = () => {
 				title="Go to home page"
 				color="gray"
 			></Button>
+
+            <TouchableOpacity 
+                    onPress={handleCellPress2} 
+                    style={styles.addButton}
+            >
+                    <Text style={styles.buttonText}>+ Add</Text>
+            </TouchableOpacity>
 
 			{/* Footer with icons */}
 			<View style={styles.containerBtn}>
