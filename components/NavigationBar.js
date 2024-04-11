@@ -29,16 +29,16 @@ function NavigationBar(props) {
 		>
 			<TouchableOpacity
 				onPress={navigateToTreasurerHomeScreen}
-				title={"CLUB CENTS"}
+				title={"Pink Vanguard Club"}
 				style={styles.logo}
 			>
 				<View>
 					<Image
-						title={"CLUB CENTS"}
+						title={"Pink Vanguard Club"}
 						style={styles.logoImg}
 						source={require("../assets/logo.png")}
 					></Image>
-					<Text style={styles.appName}>Club Cents</Text>
+					<Text style={styles.appName}>Pink Vanguard Club</Text>
 				</View>
 			</TouchableOpacity>
 

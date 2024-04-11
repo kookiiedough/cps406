@@ -64,7 +64,7 @@ export default function App() {
             backgroundColor: '#C0E19E',
           },
           headerTintColor: '#425c3b',
-          headerTitle: "Club Cents",
+          headerTitle: "Pink Vanguard Club",
           headerTitleStyle: {
             fontWeight: "bold",
           },

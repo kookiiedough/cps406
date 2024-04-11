@@ -33,7 +33,7 @@ const CoachSignIn = ({navigation}) => {
 
                 {/* welcome sign image */}
                 <Image
-                    source={{ uri: "https://i.gyazo.com/415495daadaf485604315667fec8fad1.png" }}
+                    source={"../assets/ball.webp"}
                     style={styles.logo}
                 />
                 
@@ -63,7 +63,7 @@ const CoachSignIn = ({navigation}) => {
                     
 
                     <TouchableHighlight
-                        style={[styles.btn, { backgroundColor: '#95BB6E' }]}
+                        style={[styles.btn, { backgroundColor: '#FF69B4' }]}
                         activeOpacity={0.7}
                         onPress={handlePress}
                     >
@@ -147,7 +147,7 @@ const styles= StyleSheet.create({
     },
     container: {
         flex: 1,
-        backgroundColor: '#E8F8D8',
+        backgroundColor: '#FFB6C1',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -190,7 +190,7 @@ const styles= StyleSheet.create({
         margin: 30,
         alignItems: 'center',
         alignSelf: "center",
-        backgroundColor: "#CAE19D",
+        backgroundColor: "#FF69B4",
         width: "20%",
     },
     

@@ -20,7 +20,7 @@ const LoadingPage = () => {
             {/* makeing loading page a header */}
 
             <Image
-                source={{ uri: "https://i.gyazo.com/985d9c1b0a5e354ab4dd3572d0b91a81.png" }}
+                source={"../assets/slllogo.webp"}
                 style={styles.logo}
             />
 
@@ -46,7 +46,7 @@ const styles= StyleSheet.create({
 
   container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFD1DC',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -63,7 +63,7 @@ const styles= StyleSheet.create({
     margin: 50,
     alignItems: 'center',
     alignSelf: "center",
-    backgroundColor: "#CAE19D",
+    backgroundColor: "#FF69B4",
     width: "20%",
   },
 
