@@ -184,7 +184,7 @@ const styles= StyleSheet.create({
         margin: 30,
         alignItems: 'center',
         alignSelf: "center",
-        backgroundColor: "#CAE19D",
+        backgroundColor: "#FF91A4",
         width: "20%",
     },
     

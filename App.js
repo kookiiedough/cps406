@@ -61,7 +61,7 @@ export default function App() {
           headerBackTitle: "back",
           headerShown: true,
           headerStyle: {
-            backgroundColor: '#C0E19E',
+            backgroundColor: '#FF69B4',
           },
           headerTintColor: '#425c3b',
           headerTitle: "Pink Vanguard Club",
