@@ -124,7 +124,7 @@ const IncomeStatement = () => {
 
 			<TouchableOpacity
 				style={{
-					backgroundColor: "#C6DCB0",
+					backgroundColor: "#FF91A4",
 					bottom: "5%",
 					paddingHorizontal: "5%",
 					paddingVertical: "3%",
@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "flex-end",
 		alignItems: "center",
-		backgroundColor: "#C0E19E",
+		backgroundColor: "#FF1493",
 		paddingHorizontal: 20,
 		paddingVertical: 10, // Adjust this value to change the height of the footer
 		width: "100%",

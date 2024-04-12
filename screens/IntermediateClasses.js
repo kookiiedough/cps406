@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   classInfoContainer: {
-    backgroundColor: '#CCE5B3',
+    backgroundColor: '#FFA6C9',
     padding: 10,
     borderRadius: 10,
     marginHorizontal: 20,
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#C0E19E',
+    backgroundColor: '#F4C2C2',
     paddingHorizontal: 20,
     paddingVertical: 20,
     width: '100%', 

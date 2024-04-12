@@ -54,7 +54,7 @@ const CoachSchedules = () => {
 					/>
 					<TouchableOpacity
 						style={{
-							backgroundColor: "#C6DCB0",
+							backgroundColor: " #FFB6C1",
 							bottom: "100%",
 							width: "50%",
 							paddingHorizontal: "5%",
@@ -89,7 +89,7 @@ const CoachSchedules = () => {
 
 			<Text></Text>
 			{/* <TouchableOpacity
-        style={{backgroundColor: "#C6DCB0", bottom: "20%", paddingHorizontal: "5%", paddingVertical: "3%", borderRadius: 10, position: "relative"}}
+        style={{backgroundColor: " #FFB6C1", bottom: "20%", paddingHorizontal: "5%", paddingVertical: "3%", borderRadius: 10, position: "relative"}}
         onPress={navigateToTreasurerHomeScreen}>
         <Text style={{color: "#fff", fontSize: 16}}> Go to home page
         </Text>
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "flex-end",
 		alignItems: "center",
-		backgroundColor: "#C0E19E",
+		backgroundColor: "#F4C2C2",
 		//paddingHorizontal: 20,
 		paddingVertical: 10, // Adjust this value to change the height of the footer
 		width: "100%",

@@ -39,7 +39,7 @@ export default Table;
 
 const styles = StyleSheet.create({
 	tableHeader: {
-		backgroundColor: "#C6DCB0",
+		backgroundColor: " #FFB6C1",
 	},
 	nextPage: {
 		// backgroundColor: "#F3FDE9",

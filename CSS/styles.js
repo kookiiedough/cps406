@@ -113,7 +113,7 @@ export const styles = StyleSheet.create({
 
 	navBar: {
 		flexDirection: "row",
-		// backgroundColor: "#CEE4B9",
+		// backgroundColor: "#FF91A4",
 		backgroundColor: "#ffffff",
 		// position: "absolute",
 		// height: "15%",
@@ -167,7 +167,7 @@ export const styles = StyleSheet.create({
 	},
 
 	submitButton: {
-		backgroundColor: "#C6DCB0",
+		backgroundColor: "#FF1493",
 		marginRight: "5%",
 		paddingVertical: "3%",
 		paddingHorizontal: "5%",
@@ -224,7 +224,7 @@ export const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignContent: "center",
 		alignItems: "center",
-		backgroundColor: "#E8F2DE",
+		backgroundColor: "#FF1493",
 	},
 
 	addDebtsContainer: {

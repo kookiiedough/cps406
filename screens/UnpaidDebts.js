@@ -83,7 +83,7 @@ const UnpaidDebts = () => {
 
 			<TouchableOpacity
 				style={{
-					backgroundColor: "#C6DCB0",
+					backgroundColor: " #FFB6C1",
 					top: "0%",
 					right: "25%",
 					paddingHorizontal: "5%",
@@ -204,14 +204,14 @@ const styles = StyleSheet.create({
 		right: 0,
 		width: 400,
 		height: 100,
-		backgroundColor: "#CEE4B9",
+		backgroundColor: "#FF91A4",
 		opacity: 0.8,
 	},
 	footer: {
 		flexDirection: "row",
 		justifyContent: "flex-end",
 		alignItems: "center",
-		backgroundColor: "#C0E19E",
+		backgroundColor: "#F4C2C2",
 		paddingHorizontal: 20,
 		paddingVertical: 10, // Adjust this value to change the height of the footer
 		width: "100%",

@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#CF6BA9',
+    backgroundColor: '#FFC0CB',
     paddingHorizontal: 20,
     paddingVertical: 20,
     width: '100%', 
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
   },
   
   header: {
-    backgroundColor: '#CCE5B3',
+    backgroundColor: '#F4C2C2',
     paddingVertical: 25,
     paddingHorizontal: 20,
     alignItems: 'center',

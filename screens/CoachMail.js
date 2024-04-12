@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     height: 50,
     lineHeight: 50,
-    backgroundColor: '#CCE5B3',
+    backgroundColor: '##F2BDCD',
     top: 30,
   },
   normalTxt: {

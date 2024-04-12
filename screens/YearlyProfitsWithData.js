@@ -47,7 +47,7 @@ function YearlyProfits() {
 						style={{
 							top: "80%",
 							left: "70%",
-							backgroundColor: "#C6DCB0",
+							backgroundColor: " #FFB6C1",
 							paddingVertical: "3%",
 							borderRadius: 10,
 							paddingHorizontal: "5%",

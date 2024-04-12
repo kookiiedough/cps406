@@ -47,7 +47,7 @@ const MenuOptions = (props) => {
 		>
 			<View
 				style={{
-					backgroundColor: "#E3EDD8",
+					backgroundColor: "#FFB6C1",
 					height: "100%",
 					width: "100%",
 					display: "flex",

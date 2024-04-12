@@ -122,7 +122,7 @@ const IncomeState = () => {
 			<Button
 				onPress={navigateToTreasurerHomeScreen}
 				title="Go to home page"
-				color="gray"
+				color="#DE5D83"
 			></Button>
 
             <TouchableOpacity 
@@ -237,7 +237,7 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "space-around",
 		alignItems: "center",
-		backgroundColor: "#C0E19E",
+		backgroundColor: "#DE5D83",
 		paddingHorizontal: 30,
 		paddingVertical: 10,
 		width: "100%",

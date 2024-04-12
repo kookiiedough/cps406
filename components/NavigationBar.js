@@ -23,7 +23,7 @@ function NavigationBar(props) {
 				flexDirection: "row",
 				alignItems: "center",
 				justifyContent: "space-between",
-				backgroundColor: "#CEE4B9",
+				backgroundColor: "#FF91A4",
 				height: "15%",
 			}}
 		>

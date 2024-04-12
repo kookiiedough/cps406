@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   classInfoContainer: {
-    backgroundColor: '#CCE5B3',
+    backgroundColor: '#FFA6C9',
     padding: 10,
     borderRadius: 10,
     marginHorizontal: 20,

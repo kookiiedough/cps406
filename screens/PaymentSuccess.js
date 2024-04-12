@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
       paddingVertical: 15,
       textAlign: 'center', 
       borderWidth: 8,
-      borderColor: '#CEE4B9'
+      borderColor: '#FF91A4'
     },
     topContent: {
       alignItems: 'center',
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
       justifyContent: 'space-around',
       alignItems: 'center',
-      backgroundColor: '#C0E19E',
+      backgroundColor: '#F4C2C2',
       paddingHorizontal: 20,
       paddingVertical: 20,
       width: '100%', 

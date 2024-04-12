@@ -28,7 +28,7 @@ const AddDebts = () => {
 				<View
 					style={{
 						display: "flex",
-						backgroundColor: "#BECFAC",
+						backgroundColor: "BECFAC",
 						flexDirection: "column",
 						justifyContent: "space-between",
 						alignContent: "center",
@@ -56,7 +56,7 @@ const AddDebts = () => {
 						<TextInput
 							style={{
 								height: 40,
-								backgroundColor: "#fff",
+								backgroundColor: "fff",
 								borderRadius: 10,
 								width: "90%",
 							}}
@@ -87,7 +87,7 @@ const AddDebts = () => {
 						<TextInput
 							style={{
 								height: 40,
-								backgroundColor: "#fff",
+								backgroundColor: "fff",
 								borderRadius: 10,
 								width: "90%",
 							}}
