@@ -34,7 +34,7 @@ function YearlyProfits() {
 			style={{
 				display: "flex",
 				flex: 1,
-				backgroundColor: "#E8F8D8",
+				backgroundColor: "#FFB6C1",
 				justifyContent: "space-evenly",
 			}}
 		>

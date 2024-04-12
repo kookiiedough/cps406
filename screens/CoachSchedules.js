@@ -177,7 +177,7 @@ const CoachSchedules = () => {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: "#E8F8D8",
+		backgroundColor: "#FFB6C1",
 		alignItems: "center",
 		justifyContent: "center",
 		position: "relative",
@@ -262,7 +262,7 @@ const styles = StyleSheet.create({
 		margin: 60,
 		// padding: 20,
 		width: "30%",
-		backgroundColor: "#E8F8D8",
+		backgroundColor: "#FFB6C1",
 	},
 	dropdown: {
 		height: 50,

@@ -22,19 +22,19 @@ const LevelSelect = () => {
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
-          style={[styles.button, { backgroundColor: '#95BB6E' }]}
+          style={[styles.button, { backgroundColor: '#FF007F' }]}
           onPress={() => [navigation.navigate('Beginner')]}
         >
           <Text style={styles.buttonText}>Beginner</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[styles.button, { backgroundColor: '#95BB6E' }]}
+          style={[styles.button, { backgroundColor: '#FF007F' }]}
           onPress={() => [navigation.navigate('Intermediate')]}
         >
           <Text style={styles.buttonText}>Intermediary</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={[styles.button, { backgroundColor: '#95BB6E' }]}
+          style={[styles.button, { backgroundColor: '#FF007F' }]}
           onPress={() => [navigation.navigate('Advanced')]}
         >
           <Text style={styles.buttonText}>Advanced</Text>
@@ -67,7 +67,7 @@ const LevelSelect = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#C0E19E',
+    backgroundColor: '#FFB6C1',
     paddingHorizontal: 20,
     paddingVertical: 20,
     width: '100%', 

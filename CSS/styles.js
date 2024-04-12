@@ -90,7 +90,7 @@ export const styles = StyleSheet.create({
 	},
 
 	notificationButtons: {
-		backgroundColor: "#DEF1CA",
+		backgroundColor: "#FFB6C1",
 		marginHorizontal: 30,
 		borderRadius: 10,
 		paddingTop: 10,
@@ -151,7 +151,7 @@ export const styles = StyleSheet.create({
 
 	background: {
 		display: "flex",
-		backgroundColor: "#E8F8D8",
+		backgroundColor: "#FFB6C1",
 		flex: 1,
 	},
 
@@ -239,7 +239,7 @@ export const styles = StyleSheet.create({
 	},
 
 	profitsListButtons: {
-		backgroundColor: "#DEF1CA",
+		backgroundColor: "#FFB6C1",
 		paddingVertical: "5%",
 		borderRadius: 10,
 		width: "85%",

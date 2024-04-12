@@ -86,7 +86,7 @@ const TreasurerSignIn = ({ navigation }) => {
 					/>
 
 					<TouchableHighlight
-						style={[styles.btn, { backgroundColor: " #FF69B4" }]}
+						style={[styles.btn, { backgroundColor: "#CF6BA9" }]}
 						activeOpacity={0.7}
 						onPress={() => {
 							handlePress();

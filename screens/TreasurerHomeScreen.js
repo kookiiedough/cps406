@@ -28,7 +28,7 @@ const TreasurerHomeScreen = () => {
 			style={{
 				display: "flex",
 				justifyContent: "space-between",
-				backgroundColor: "#E8F8D8",
+				backgroundColor: "#FFB6C1",
 				flex: 1,
 				zIndex: 1,
 			}}
@@ -76,7 +76,7 @@ const TreasurerHomeScreen = () => {
 							</Text>
 							<View
 								style={{
-									backgroundColor: "#DEF1CAD8",
+									backgroundColor: "#FFA6C9",
 									height: "10%",
 								}}
 							></View>
@@ -93,7 +93,7 @@ const TreasurerHomeScreen = () => {
 							</Text>
 							<View
 								style={{
-									backgroundColor: "#DEF1CA",
+									backgroundColor: "#DE5D83",
 									height: "10%",
 								}}
 							></View>

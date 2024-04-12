@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
 	container: {
 		display: "flex",
 		flex: 1,
-		backgroundColor: "#E8F8D8",
+		backgroundColor: "#FFB6C1",
 		alignItems: "center",
 		justifyContent: "center",
 	},
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "space-around",
 		alignItems: "center",
-		backgroundColor: "#C0E19E",
+		backgroundColor: "#FF69B4",
 		paddingHorizontal: 20,
 		paddingVertical: 10, // Adjust this value to change the height of the footer
 		width: "100%",

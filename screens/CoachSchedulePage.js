@@ -76,7 +76,7 @@ const CoachSchedulePage = ({navigation, route}) => {
 const styles = StyleSheet.create({
   containerOld: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
   },
 
   heading: {
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
   },
   Container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#C0E19E',
+    backgroundColor: '#CF6BA9',
     paddingHorizontal: 20,
     paddingVertical: 20,
     width: '100%', 
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
     margin: 50,
     alignItems: 'center',
     alignSelf: "center",
-    backgroundColor: "#CAE19D",
+    backgroundColor: "#DE5D83",
     borderColor: 'gray',
     borderWidth: 1,
     width: "20%",

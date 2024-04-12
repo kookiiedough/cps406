@@ -56,7 +56,7 @@ const IntermediateClasses = ({ navigation }) => {
           selectedButton === null && (
             <TouchableHighlight
               key={level}
-              style={[styles.button, { backgroundColor: '#95BB6E' }]}
+              style={[styles.button, { backgroundColor: '#FF007F' }]}
               onPress={() => handlePress(level)}>
               <Text style={styles.buttonText}>{level}</Text>
             </TouchableHighlight>
@@ -76,7 +76,7 @@ const IntermediateClasses = ({ navigation }) => {
         {/* Go Back Button */}
         {selectedButton && (
           <TouchableHighlight
-            style={[styles.Backbutton, { backgroundColor: '#95BB6E' }]}
+            style={[styles.Backbutton, { backgroundColor: '#FF007F' }]}
             onPress={() => handlePress(null)}>
             <Text style={styles.buttonText}>Go Back</Text>
           </TouchableHighlight>
@@ -85,7 +85,7 @@ const IntermediateClasses = ({ navigation }) => {
         {/* Enroll Now Button */}
         {selectedButton && (
           <TouchableHighlight
-            style={[styles.Backbutton, { backgroundColor: '#95BB6E' }]}
+            style={[styles.Backbutton, { backgroundColor: '#FF007F' }]}
             onPress={enrollNow}>
             <Text style={styles.buttonText}>Enroll Now</Text>
           </TouchableHighlight>
@@ -126,7 +126,7 @@ const IntermediateClasses = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
     alignItems: 'center',
     justifyContent: 'center',
   },

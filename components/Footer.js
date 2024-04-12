@@ -11,7 +11,7 @@ function Footer(props) {
 				alignItems: "center",
 				alignContent: "flex-end",
 				justifyContent: "space-between",
-				backgroundColor: "#E8F8D8",
+				backgroundColor: "#FFB6C1",
 				height: "15%",
 			}}
 		>

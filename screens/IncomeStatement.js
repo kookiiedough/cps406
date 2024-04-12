@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
 		// display: "flex",
 		// flexDirection: "row",
 		flex: 1,
-		backgroundColor: "#E8F8D8",
+		backgroundColor: "#FFB6C1",
 		alignItems: "center",
 		justifyContent: "center",
 		position: "relative",

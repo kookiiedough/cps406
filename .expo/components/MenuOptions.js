@@ -10,87 +10,87 @@ import AddDebts from "../screens/AddDebts";
 import AddProfits from "../screens/AddProfits";
 
 const MenuOptions = (props) => {
-	const navigation = useNavigation();
+    const navigation = useNavigation();
 
-	const navigateToTreasurerHomeScreen = () => {
-		navigation.navigate("Home");
-	};
+    const navigateToTreasurerHomeScreen = () => {
+        navigation.navigate("Home");
+    };
 
-	const navigateToYearlyProfits = () => {
-		navigation.navigate("YearlyProfits");
-	};
+    const navigateToYearlyProfits = () => {
+        navigation.navigate("YearlyProfits");
+    };
 
-	const navigateToProfitTracking = () => {
-		navigation.navigate("ProfitTracking");
-	};
+    const navigateToProfitTracking = () => {
+        navigation.navigate("ProfitTracking");
+    };
 
-	const navigateToAddProfits = () => {
-		navigation.navigate("AddProfits");
-	};
+    const navigateToAddProfits = () => {
+        navigation.navigate("AddProfits");
+    };
 
-	const navigateToAddDebts = () => {
-		navigation.navigate("AddDebts");
-	};
+    const navigateToAddDebts = () => {
+        navigation.navigate("AddDebts");
+    };
 
-	return (
-		<View
-			style={
-				props.visible
-					? {
-							display: "flex",
-							height: "100%",
-							width: "100%",
-							position: "absolute",
-							zIndex: "10",
-							top: 0,
-							left: 0,
-					  }
-					: { display: "none" }
-			}
-		>
-			<View
-				style={{
-					backgroundColor: "white",
-					height: "100%",
-					width: "100%",
-					display: "flex",
-					alignItems: "center",
-					justifyContent: "center",
-				}}
-			>
-				<TouchableOpacity style={{}}>
-					<Text style={styles.menuItem}>Income Statements</Text>
-				</TouchableOpacity>
-				<TouchableOpacity style={{}} onPress={navigateToProfitTracking}>
-					<Text style={styles.menuItem}>Profit tracking</Text>
-				</TouchableOpacity>
-				<TouchableOpacity style={{}}>
-					<Text style={styles.menuItem}>Debts</Text>
-				</TouchableOpacity>
-				<TouchableOpacity style={{}}>
-					<Text style={styles.menuItem}>Coach list</Text>
-				</TouchableOpacity>
-				<TouchableOpacity style={{}}>
-					<Text style={styles.menuItem}>Members</Text>
-				</TouchableOpacity>
-				<TouchableOpacity onPress={() => props.closeMenu()}>
-					<Text
-						style={{
-							fontSize: 25,
-							marginVertical: 15,
-							color: "#BECFAC",
-							fontWeight: "bold",
-						}}
-					>
-						X
-					</Text>
-				</TouchableOpacity>
-				{/* <TouchableOpacity style={styles.menuItem}>
+    return (
+        <View
+            style={
+                props.visible
+                    ? {
+                            display: "flex",
+                            height: "100%",
+                            width: "100%",
+                            position: "absolute",
+                            zIndex: "10",
+                            top: 0,
+                            left: 0,
+                      }
+                    : { display: "none" }
+            }
+        >
+            <View
+                style={{
+                    backgroundColor: "#FFD1DC", // Changed to light pink
+                    height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                }}
+            >
+                <TouchableOpacity style={{}}>
+                    <Text style={styles.menuItem}>Income Statements</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{}} onPress={navigateToProfitTracking}>
+                    <Text style={styles.menuItem}>Profit tracking</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{}}>
+                    <Text style={styles.menuItem}>Debts</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{}}>
+                    <Text style={styles.menuItem}>Coach list</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{}}>
+                    <Text style={styles.menuItem}>Members</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => props.closeMenu()}>
+                    <Text
+                        style={{
+                            fontSize: 25,
+                            marginVertical: 15,
+                            color: "#F4C2C2", // This already seems to be styled for pink
+                            fontWeight: "bold",
+                        }}
+                    >
+                        X
+                    </Text>
+                </TouchableOpacity>
+                {/* <TouchableOpacity style={styles.menuItem}>
           <Text style={styles.menuText}>Settings</Text>
         </TouchableOpacity> */}
-			</View>
-		</View>
-	);
+            </View>
+        </View>
+    );
 };
 
 export default MenuOptions;

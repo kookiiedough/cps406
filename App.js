@@ -108,7 +108,7 @@ export default function App() {
         <Stack.Screen component={UnpaidDebts} name="UnpaidDebts" options={{ title: "UnpaidDebts" }} />
         <Stack.Screen component={CoachSchedules} name="CoachSchedules" options={{ title: "CoachSchedules" }} /> 
 
-	<Stack.Screen component={TreasurerHomeScreen} name="TreasurerHomeScreen" options={{ title: "Home"}} style={{ backgroundColor: "#E8F8D8" }}/>
+	<Stack.Screen component={TreasurerHomeScreen} name="TreasurerHomeScreen" options={{ title: "Home"}} style={{ backgroundColor: "#FFB6C1" }}/>
 	<Stack.Screen component={AddDebts} name="AddDebts" options={{ title: "Add Debts"}} />
 	<Stack.Screen component={AddProfits} name="AddProfits" options={{ title: "Add Profit"}}/>
 	<Stack.Screen component={ProfitTracking} name="ProfitTracking" options={{ title: "Yearly Profits"}}/>

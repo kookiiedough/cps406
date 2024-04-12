@@ -55,7 +55,7 @@ const BeginnerClasses = ({ navigation }) => {
           selectedButton === null && (
             <TouchableHighlight
               key={level}
-              style={[styles.button, { backgroundColor: '#95BB6E' }]}
+              style={[styles.button, { backgroundColor: '#FF007F' }]}
               onPress={() => handlePress(level)}>
               <Text style={styles.buttonText}>{level}</Text>
             </TouchableHighlight>
@@ -75,7 +75,7 @@ const BeginnerClasses = ({ navigation }) => {
         {/* Go Back Button */}
         {selectedButton && (
           <TouchableHighlight
-            style={[styles.Backbutton, { backgroundColor: '#95BB6E' }]}
+            style={[styles.Backbutton, { backgroundColor: '#FF007F' }]}
             onPress={() => handlePress(null)}>
             <Text style={styles.buttonText}>Go Back</Text>
           </TouchableHighlight>
@@ -84,7 +84,7 @@ const BeginnerClasses = ({ navigation }) => {
         {/* Enroll Now Button */}
         {selectedButton && (
           <TouchableHighlight
-            style={[styles.Backbutton, { backgroundColor: '#95BB6E' }]}
+            style={[styles.Backbutton, { backgroundColor: ' #FF007F' }]}
             onPress={enrollNow}>
             <Text style={styles.buttonText}>Enroll Now</Text>
           </TouchableHighlight>
@@ -125,7 +125,7 @@ const BeginnerClasses = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#C0E19E',
+    backgroundColor: '#FF69B4',
     paddingHorizontal: 20,
     paddingVertical: 20,
     width: '100%', 

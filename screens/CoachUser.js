@@ -13,10 +13,10 @@ const CoachUser = ({navigation, route}) => {
       </View>
       {/* Logo */}
       <View style={styles.logoContainer}>
-        <Image source={require('../assets/profileTennis.png')} style={styles.logo} />
+        <Image source={require('../assets/ball.webp')} style={styles.logo} />
         <Text style={styles.information}>{user}</Text>
         <Text style={styles.information}>King</Text>
-        <Text style={styles.information}>{user}.King@gmail.com</Text>
+        <Text style={styles.information}>{user}.Sharleen@gmail.com</Text>
         <Text style={styles.information}>647-889-9990</Text>
         <Text style={styles.normalTxt}>Edit Information</Text>
       </View>
@@ -55,7 +55,7 @@ const CoachUser = ({navigation, route}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
   },
   header: {
     backgroundColor: '#CCE5B3',

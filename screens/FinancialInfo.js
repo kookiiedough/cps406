@@ -64,7 +64,7 @@ const FinancialInfo = ({ navigation, route }) => {
             value={expiryDate}
           />
           <TouchableHighlight
-            style={[styles.button, { backgroundColor: '#95BB6E' }]}
+            style={[styles.button, { backgroundColor: '#CF6BA9' }]}
             onPress={handlePress}
           >
             <Text style={styles.buttonText}>Submit</Text>
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#C0E19E',
+    backgroundColor: '#CF6BA9',
     paddingHorizontal: 20,
     paddingVertical: 20,
     width: '100%',

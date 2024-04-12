@@ -57,7 +57,7 @@ const UpcomingEventsFilled = ({navigation}) => {
 const styles = StyleSheet.create({
   containerOld: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
   },
 
   heading: {
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   },
   Container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -29,7 +29,7 @@ const AddProfits = () => {
 				display: "flex",
 				flex: 1,
 				justifyContent: "space-evenly",
-				backgroundColor: "#E8F8D8",
+				backgroundColor: "#FFB6C1",
 			}}
 		>
 			<NavigationBar openMenu={openMenu} />

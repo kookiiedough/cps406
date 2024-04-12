@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -79,14 +79,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     fontSize: 18,
     color: '#425c3b',
-    backgroundColor: '#a3c999',
+    backgroundColor: '#CC33CC',
     marginBottom: 100,
     justifyContent: 'center',
     paddingHorizontal: 20,
     paddingVertical: 15,
     textAlign: 'center', 
     borderWidth: 8,
-    borderColor: '#CEE4B9'
+    borderColor: '#FFB7C5'
   },
 
   topContent: {
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#C0E19E',
+    backgroundColor: '#FF69B4',
     paddingHorizontal: 20,
     paddingVertical: 20,
     width: '100%', // Take full width

@@ -25,7 +25,7 @@ const ProfitTracking = () => {
 	};
 
 	return (
-		<View style={{ backgroundColor: "#E8F8D8", display: "flex", flex: 1 }}>
+		<View style={{ backgroundColor: "#FFB6C1", display: "flex", flex: 1 }}>
 			<NavigationBar openMenu={openMenu} />
 			<MenuOptions visible={menuOpen} closeMenu={closeMenu} />
 			<ScrollView style={{ display: "flex", flex: 1 }}>
@@ -87,7 +87,7 @@ const ProfitTracking = () => {
 								</Text>
 								<View
 									style={{
-										backgroundColor: "#DEF1CA",
+										backgroundColor: "#FFB6C1",
 										height: "5%",
 									}}
 								></View>
@@ -102,7 +102,7 @@ const ProfitTracking = () => {
 							<Text style={{ left: "5%" }}> 2023 | 12 items</Text>
 							<View
 								style={{
-									backgroundColor: "#DEF1CA",
+									backgroundColor: "#FFB6C1",
 									height: "5%",
 								}}
 							></View>

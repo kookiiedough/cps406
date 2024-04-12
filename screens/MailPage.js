@@ -43,10 +43,10 @@ const MailPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
   },
   header: {
-    backgroundColor: '#CCE5B3',
+    backgroundColor: '#FF1493',
     paddingVertical: 25,
     paddingHorizontal: 20,
     alignItems: 'center',
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     color: '#425c3b',
-    backgroundColor: '#CCE5B3',
+    backgroundColor: ' #F4C2C2',
     justifyContent: 'center',
     borderWidth: 1,
     paddingHorizontal: 10,
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#C0E19E',
+    backgroundColor: '#FF1493',
     paddingHorizontal: 20,
     paddingVertical: 20,
     width: '100%',

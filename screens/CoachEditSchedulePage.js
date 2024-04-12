@@ -98,7 +98,7 @@ const CoachEditSchedulePage = ({navigation, route}) => {
 const styles = StyleSheet.create({
   containerOld: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
   },
   information: {
     marginTop: 20,
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
   },
   Container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FFB6C1',
     alignItems: 'center',
     justifyContent: 'center',
   },

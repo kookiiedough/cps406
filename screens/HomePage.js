@@ -13,11 +13,11 @@ const HomePage = ({navigation}) => {
         <TouchableOpacity
           onPress={() => {
             navigation.navigate('Mail');}}>
-          <Image source={require('../assets/email.png')} style={styles.topRightImage} />
+          <Image source={require('../assets/slllogo.webp')} style={styles.topRightImage} />
         </TouchableOpacity>
       </View>
       <View style={styles.logoContainer}>
-        <Image source={require('../assets/tennis.png')} style={styles.logo} />
+        <Image source={require('../assets/ball.webp')} style={styles.logo} />
         
         <TouchableOpacity onPress={()=>navigation.navigate('UpcomingEventsFilled')}>
           <Text style={styles.heading}>Select a Class to Begin</Text>
@@ -25,7 +25,7 @@ const HomePage = ({navigation}) => {
 
       </View>
         <TouchableOpacity
-          style={[styles.button, { backgroundColor: '#95BB6E' }]}
+          style={[styles.button, { backgroundColor: ' #FF91A4' }]}
           onPress={() => [navigation.navigate('Browse')]}
         >
           <Text style={styles.buttonText}>Browse Classes</Text>
@@ -61,7 +61,7 @@ const HomePage = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8F8D8',
+    backgroundColor: '#FF77FF',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#C0E19E',
+    backgroundColor: '#FF69B4',
     paddingHorizontal: 20,
     paddingVertical: 20,
     width: '100%', 
