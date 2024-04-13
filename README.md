@@ -1,2 +1,2 @@
-**ClubApp**
-My club app
+**The Pink Vanguards**
+Basketball club for women 
